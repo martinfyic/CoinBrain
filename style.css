@@ -6,35 +6,26 @@
 
 body{
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-background-color: #47B5FF;
 font-weight: bold;
 text-align: center;
 }
 
 main{
-    margin-top: 2rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     color:#DFF6FF
 }
 
-.img-portada {
-    width: 90vh;
-    height: auto;
-    border-radius: 10px;
+.height{
+    height: 100vh;
 }
 
 .intercambio {
     color:#DFF6FF;
+    background-color: #47B5FF;
 }
 .intercambio h3{
     color: #06283D;
 }
 
-.cambio {
-    color:#DFF6FF;
-    font-size: 30px;
-    padding: 0 10px;
+.footerColor{
+    background-color: #47B5FF;
 }
