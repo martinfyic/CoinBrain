@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>BITCAMP | Simulador interactivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand logoTexto" href="#"><img src="./img/logo1.png" alt="logo empresa" width="40"
+                        height="34" class="d-inline-block align-text-top"> BITCAMP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Intercambio</a>
+                        <a class="nav-link" href="#">Noticias</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="d-flex flex-row">
+        <div class="px-2 w-50">
+            <img class="img-portada" src="./img/cryptoportada.jpg" alt="crypto monedas, btc,eth">
+        </div>
+        <div class="px-2 d-grid gap-3 w-50 align-items-center">
+            <h1 class="h1 fw-bold">Sobre nosotros</h1>
+            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis optio repellat provident
+                a. Asperiores assumenda nisi quos beatae doloremque similique repudiandae dolor reiciendis, voluptas
+                corporis iste laudantium. Reprehenderit, unde. Ipsa doloribus aliquam magni dicta soluta repellat
+                suscipit minus quos magnam!</p>
+        </div>
+    </main>
+
+    <section class="bg-light">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./img/logo1.png" alt="" width="100" height="90">
+            <h1 class="display-5 fw-bold px-2">BITCAMP</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 px-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore placeat fugiat maiores vitae excepturi obcaecati mollitia dicta esse, sequi accusamus eos aliquid quidem vel culpa ut exercitationem at. Sed in dignissimos voluptate nihil tenetur voluptatum perferendis quasi doloremque quis ipsum esse quo, sunt sit minima a! Optio temporibus a consequuntur mollitia, facere consectetur tempora iste voluptatem totam magni ipsam blanditiis?</p>
+                <div class="d-grid gap-1 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Contactanos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid p-4 intercambio">
+        <img src="./img/imgIntercambio.svg" alt="" class="w-25 p-3">
+        <h2 class="h2">Intercambio</h2>
+        <h3 class="h3">Conversor de monedas</h3>
+        <div class="container">
+            <div class="moneda p-3">
+                <select class="btn btn-light" id="monedaUno">
+                    <option value="USD" selected>USD</option>
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="BNB">BNB</option>
+                    <option value="ADA">ADA</option>
+                    <option value="USDT">USDT</option>
+                </select>
+                <input class="btn btn-light" type="number" id="cantidadUno" placeholder="0" value="1">
+            </div>
+            <div class="container tazaDeCambio p-2">
+                <button class="btn btn-success" id="taza">
+                    Cambio
+                </button>
+
+                <div class="cambio" id="cambio"></div>
+            </div>
+
+            <div class="moneda p-3">
+                <select class="btn btn-light" id="monedaDos">
+                    <option value="USD">USD</option>
+                    <option value="BTC" selected>BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="BNB">BNB</option>
+                    <option value="ADA">ADA</option>
+                    <option value="USDT">USDT</option>
+                </select>
+                <input class="btn btn-light" type="number" id="cantidadDos" placeholder="0" value="0">
+            </div>
+        </div>
+
+    </Section>
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Intercambio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Monedas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 BITCAMP, Inc</p>
+        </footer>
+    </div>
+    <!-- mi script -->
+    <!-- <script src="./main.js"></script> -->
+    <!-- boostrap script -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
