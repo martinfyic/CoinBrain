@@ -25,6 +25,9 @@ function validarForm() {
     } else {
         validacionform.innerHTML = "";
     }
+    if (email !== "" || nombre !== "" || telefono !== "" ) {
+        validacionform.innerHTML = "<p class='text-white text-center bg-success container pb-3 mx-3'> Formulario enviado correctamente </p>";
+    }
 }
 
 document.getElementById("btn_enviar").addEventListener("click", validarForm);
